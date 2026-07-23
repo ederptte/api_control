@@ -26,4 +26,5 @@ RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 # Ajustar permisos para Laravel
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
+ENV PORT=80
 EXPOSE 80
